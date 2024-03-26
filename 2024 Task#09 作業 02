@@ -1,0 +1,23 @@
+def isPrime(n):
+  """回傳 n 是否為質數"""
+  if n>1:
+    for i in range(2,n):
+      if n%i==0:
+        return None
+    return n
+  else:
+    return None
+
+def primes(n):
+  """回傳小於 n 的質數"""
+  primelist=[]
+  if n>1:
+    for i in range(2,n):
+      if isPrime(i):
+        primelist.append(i)
+  else:
+    return None
+  print(primelist)
+
+x=int(input("請輸入一個數字: "))
+primes(x)
