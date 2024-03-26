@@ -1,0 +1,4 @@
+L = [1, 1, 3, 9, 7, 8, 8, 8]
+s=set(L)
+L=sorted(s,reverse=True)
+print(L) 
